@@ -37,10 +37,12 @@ font-family: 'Heebo', sans-serif;
 
 .navigation .first-pill{
     text-align: right;
+    padding-left: 40%;
 }
 .navigation .nav-pills{
     text-align: right;
     padding-left:1rem;
+    padding-bottom:1rem;
 }
 
 .list-non-bullet{
