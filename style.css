@@ -11,11 +11,14 @@
 body{
     background-color:white;
     letter-spacing: 1px;
+    
 }
 .main-container{
     background-color:var(--secondary-color) ;
     border-radius: 0.5rem;
     padding:1.5rem 1.3rem 1.5rem 1.3rem;
+    height:100%;
+    width:100%;
 }
 
 .navigation{
@@ -23,13 +26,26 @@ background-color:var(--primary-color);
 color:var(--text-color);
 font-family: 'Heebo', sans-serif;
 
+
 }
 
 .container{
+    background-color:var(--primary-color);
+    color:var(--text-color);
     padding-top:2.5rem;
-    padding-left:1.5rem;
-    border-radius: 0.8rem;
+    padding-left:2.5rem;
+    border-radius: 1.5rem;
 }
+.container .content a{
+    border-radius: 1.5rem;
+    background-color:var(--button-background-color);
+    color:var(--text-color);
+    text-decoration: none;
+    padding:0.5rem 1.5rem;
+    margin-left:auto;
+    margin-right:20px;
+}
+
 
 .navigation .nav-brand{
     font-weight:bold;
@@ -76,4 +92,8 @@ font-family: 'Heebo', sans-serif;
 .list-item-inline{
     display:inline;
     padding:0rem 1rem 1rem 1rem;
+}
+
+.content{
+    padding:2rem 2rem;
 }
