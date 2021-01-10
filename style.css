@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
 
 :root{
 --primary-color:#887D77;
@@ -17,17 +17,10 @@ body{
     background-color:var(--secondary-color) ;
     border-radius: 0.5rem;
     padding:1.5rem 1.3rem 1.5rem 1.3rem;
-    height:100%;
-    width:100%;
+   
 }
 
-.navigation{
-background-color:var(--primary-color);
-color:var(--text-color);
-font-family: 'Heebo', sans-serif;
 
-
-}
 
 .container{
     background-color:var(--primary-color);
@@ -35,8 +28,10 @@ font-family: 'Heebo', sans-serif;
     padding-top:2.5rem;
     padding-left:2.5rem;
     border-radius: 1.5rem;
+    box-sizing: border-box;
+   
 }
-.container .content a{
+a{
     border-radius: 1.5rem;
     background-color:var(--button-background-color);
     color:var(--text-color);
@@ -47,9 +42,17 @@ font-family: 'Heebo', sans-serif;
 }
 
 
-.navigation .nav-brand{
-    font-weight:bold;
+.navigation{
+    background-color:var(--primary-color);
+    color:var(--text-color);
+    font-family: 'Heebo', sans-serif;
+    overflow: hidden;
     
+    
+    }
+
+.navigation .nav-brand{
+    font-weight:bold;    
     padding-bottom:1rem;
    
 }
@@ -72,7 +75,7 @@ font-family: 'Heebo', sans-serif;
     background-color: transparent;
     color:var(--text-color);
     text-decoration: none;
-    padding:0.4rem 1rem;
+    padding:0.4rem 0.5em;
     margin-left:auto;
     margin-right:20px;
   
@@ -94,6 +97,24 @@ font-family: 'Heebo', sans-serif;
     padding:0rem 1rem 1rem 1rem;
 }
 
-.content{
-    padding:2rem 2rem;
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
 }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#next-line{
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
