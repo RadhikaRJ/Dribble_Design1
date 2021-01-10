@@ -20,17 +20,33 @@ body{
    
 }
 
-
-
-.container{
-    background-color:var(--primary-color);
-    color:var(--text-color);
-    padding-top:2.5rem;
-    padding-left:2.5rem;
+.cm{
+  
     border-radius: 1.5rem;
-    box-sizing: border-box;
+    border: 1px solid #423129;
+    background-color: transparent;
+    -ms-transform: rotate(-3.5deg);
+    -webkit-transform: rotate(-3.5deg);
+    transform: rotate(-3.5deg);
+    margin-right:0px;
    
 }
+
+.container{
+   
+    background-color:var(--primary-color);
+    color:var(--text-color);
+    padding-top:1.5rem;
+    padding-left:1.5rem;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+   margin:0.5rem;
+    -ms-transform: rotate(+3.5deg);
+    -webkit-transform: rotate(+3.5deg);
+    transform: rotate(+3.5deg);
+   
+}
+
 a{
     border-radius: 1.5rem;
     background-color:var(--button-background-color);
@@ -113,6 +129,7 @@ a{
 }
 img{
     
+   width:fit-content;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
